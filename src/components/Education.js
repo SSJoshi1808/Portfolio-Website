@@ -5,47 +5,69 @@ const Education = () => {
   const education = [
     {
       id: 1,
-      degree: "Master of Computer Applications (MCA)",
-      institution: "Your University Name",
-      year: "2022 - Present",
-      details: "Currently pursuing MCA with focus on advanced programming and software development."
+      degree: "Masters of Computer Applications (MCA)",
+      institution: "MES Institute of Management and Career Courses",
+      year: "2024 - 2026",
+      status: "Pursuing",
+      achievements: "SGPA-9.77 | CGPA-9.10 | Percentage- 86%"
     },
     {
       id: 2,
-      degree: "Bachelor's Degree",
-      institution: "Your Previous University",
-      year: "2019 - 2022",
-      details: "Completed bachelor's with strong academic performance and fundamental computer science knowledge."
+      degree: "Bachelor of Business Administration in Computer Applications (BBA-CA)",
+      institution: "MES GARWARE COLLEGE OF COMMERCE (GCC), KARVE ROAD, PUNE",
+      year: "2021 - 2024",
+      achievements: "SGPA-9.77 | CGPA-9.10 | Percentage- 86%"
+    },
+    {
+      id: 3,
+      degree: "HSC (12th)",
+      institution: "MES BALSHIKSHAN MANDIR HIGHER SECONDARY SCHOOL, MAYUR COLONY, KOTHRUD, PUNE",
+      year: "2021"
+    },
+    {
+      id: 4,
+      degree: "SSC (10th)",
+      institution: "New India School, Bhusari Colony, Kothrud, PUNE",
+      year: "2019"
     }
   ];
 
   return (
-    <div name="education" className="w-full min-h-screen bg-primary text-textPrimary">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <motion.h2
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-4xl font-bold inline border-b-4 border-secondary"
-          >
+    <div name="education" className="w-full min-h-screen bg-primary text-textPrimary py-20 px-4 md:px-8">
+      <div className="max-w-screen-lg mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="pb-8"
+        >
+          <h2 className="text-4xl font-bold text-[#61dafb] inline border-b-4 border-[#61dafb]">
             Education
-          </motion.h2>
-        </div>
+          </h2>
+        </motion.div>
 
-        <div className="grid gap-8 px-12 sm:grid-cols-1">
-          {education.map(({ id, degree, institution, year, details }) => (
+        <div className="space-y-6">
+          {education.map((edu) => (
             <motion.div
-              key={id}
+              key={edu.id}
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: id * 0.2 }}
-              className="shadow-md shadow-gray-600 rounded-lg p-6 hover:scale-105 duration-500"
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: edu.id * 0.1 }}
+              className="bg-[#0a192f] p-6 rounded-lg shadow-lg border border-[#61dafb] hover:shadow-xl transition-all duration-300"
             >
-              <h3 className="text-2xl font-bold text-secondary mb-2">{degree}</h3>
-              <h4 className="text-xl mb-1">{institution}</h4>
-              <p className="text-gray-400 mb-3">{year}</p>
-              <p className="text-lg">{details}</p>
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                <h3 className="text-xl md:text-2xl font-bold text-[#61dafb]">{edu.degree}</h3>
+                <span className="text-gray-400 text-sm md:text-base">{edu.year}</span>
+              </div>
+              <p className="text-gray-300 text-base md:text-lg mb-2">{edu.institution}</p>
+              {edu.status && (
+                <span className="inline-block bg-[#112240] text-[#61dafb] px-3 py-1 rounded-full text-sm">
+                  {edu.status}
+                </span>
+              )}
+              {edu.achievements && (
+                <p className="text-[#61dafb] mt-2 text-sm md:text-base font-medium">{edu.achievements}</p>
+              )}
             </motion.div>
           ))}
         </div>

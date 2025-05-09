@@ -10,7 +10,7 @@ const About = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl font-bold inline border-b-4 border-secondary"
+            className="text-4xl font-bold text-[#61dafb] inline border-b-4 border-[#61dafb]"
           >
             About Me
           </motion.h2>
