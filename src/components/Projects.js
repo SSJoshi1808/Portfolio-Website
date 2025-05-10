@@ -6,13 +6,13 @@ const Projects = () => {
     {
       title: "Suvarna Rup – Jewellery Ecommerce System",
       description: "An elegant, secure jewellery e-commerce platform with comprehensive features for both administrators and clients. The system facilitates product management, user authentication, and secure payment processing.",
-      technologies: ["React.js", "Node.js", "Express", "MongoDB", "JWT", "PayPal"],
+      technologies: ["React-JS", "Node-JS", "Express-JS", "MongoDB", "JWT", "PayPal"],
       features: [
         "Role-based access for admins and users",
         "Integrated secure online transactions",
         "Robust inventory and product control",
         "Authentication and token-based authorization",
-        "Live order status and history tracking"
+   
       ]
     },
     {
@@ -33,8 +33,8 @@ const Projects = () => {
       features: [
         "Add, edit, and remove device entries",
         "Customer profile and data management",
-        "Automated bill creation and calculation",
-        "Seamless integration with backend database"
+        "Seamless integration with backend database",
+        "Automated bill creation and calculation"
       ]
     },
     {
@@ -43,9 +43,10 @@ const Projects = () => {
       technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Chart.js"],
       features: [
         "Comprehensive loan information display",
-        "Built-in EMI estimation tool",
-        "Dynamic charts and data visualization",
-        "Simplified user navigation experience"
+         "Dynamic charts and data visualization",
+        "Simplified user navigation experience",
+        "Built-in EMI estimation tool"
+       
       ]
     },
     {
@@ -54,8 +55,8 @@ const Projects = () => {
       technologies: ["HTML", "CSS", "JavaScript"],
       features: [
         "Visual plant listings with descriptions",
-        "Event and workshop announcements",
         "Interactive and animated content sections",
+        "Event and workshop announcements",
         "Mobile-first responsive design"
       ]
     }

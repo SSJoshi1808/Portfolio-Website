@@ -18,7 +18,10 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-textSecondary fixed bg-[#0a192f] z-50">
       <div>
-        <h1 className="text-4xl font-bold text-[#61dafb]">Shreya</h1>
+        <h1 className="text-5xl font-bold text-[#61dafb] flex items-center group">
+          <span className="font-serif tracking-wider transform group-hover:scale-110 group-hover:-rotate-6 transition-all duration-300 ease-in-out">S</span>
+          <span className="text-5xl font-bold tracking-tight -ml-2 italic transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 ease-in-out">J</span>
+        </h1>
       </div>
 
       <ul className="hidden md:flex">
