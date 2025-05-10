@@ -3,7 +3,11 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-primary text-textPrimary">
+    <div
+  name="about"
+  className="scroll-mt-20 w-full bg-primary text-textPrimary"
+>
+
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <motion.h2 

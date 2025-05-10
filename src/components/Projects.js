@@ -6,71 +6,129 @@ const Projects = () => {
     {
       title: "Suvarna Rup – Gold Investment Management System",
       period: "FYMCA Sem-2",
-      description: "An elegant, secure jewellery e-commerce platform built as part of my academic mini-project. The system includes two user roles—Admin and Client—with a complete flow from product management to bookings and payment.",
-      tags: ["E-commerce", "User Authentication", "Payment Integration", "Admin Dashboard"]
+      description: "An elegant, secure jewellery e-commerce platform with comprehensive features for both administrators and clients. The system facilitates product management, user authentication, and secure payment processing.",
+      technologies: ["React.js", "Node.js", "Express", "MongoDB", "JWT", "Stripe"],
+      features: [
+        "Admin and Client role management",
+        "Secure payment integration",
+        "Product catalog management",
+        "User authentication and authorization",
+        "Order tracking system"
+      ]
     },
     {
-      title: "NestNavi - Location Based Search",
-      period: "FYMCA Sem-1",
-      description: "A web-based platform designed to simplify and streamline the rental process. This system provides an interactive interface for both property owners and tenants.",
-      tags: ["Django", "Location Services", "Property Management", "User Interface"]
+      title: "PG Rental System",
+      period: "FYMCA Sem-2",
+      description: "A web platform for property owners to list PG rooms and for tenants to express interest. The system streamlines the rental process with user-friendly interfaces for both parties.",
+      technologies: ["HTML", "CSS", "Python", "Django", "SQLite"],
+      features: [
+        "Property listing and management",
+        "Tenant interest tracking",
+        "User authentication",
+        "Responsive design"
+      ]
     },
     {
       title: "Electronic Device Billing System",
       period: "TYBBA_CA Sem 6",
-      description: "A desktop-based billing application developed in Java Swing with MySQL database integration for managing customer and product data, generating invoices, and tracking reports.",
-      tags: ["Java Swing", "MySQL", "Invoice Generation", "Reporting"]
+      description: "A comprehensive billing system with functionalities to add, update, and delete product and customer details.",
+      technologies: ["Java", "Swing", "MySQL", "NetBeans IDE"],
+      features: [
+        "Product management",
+        "Customer management",
+        "Billing generation",
+        "Database integration"
+      ]
     },
     {
-      title: "Bank Loan Management System",
+      title: "Infinity Finance - Bank Loan Management System",
       period: "TYBBA_CA Sem 5",
-      description: "A web-based application that manages various types of loans (Home, Gold, Education, Business) with separate roles for users and administrators.",
-      tags: ["Web Development", "Loan Management", "Role-based Access", "Financial System"]
+      description: "An interactive system providing details on various loan types, including an EMI calculator for better financial planning.",
+      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Chart.js"],
+      features: [
+        "Loan type information",
+        "EMI calculator",
+        "Interactive charts",
+        "User-friendly interface"
+      ]
     },
     {
-      title: "Green Culture",
+      title: "Green Culture Plant Nursery Website",
       period: "TYBBA_CA Sem 4",
-      description: "A static web application designed to promote awareness of the benefits of plants and gardening. This site educates users on different organic fruits, vegetables, and flowers, and also allows them to register for workshops and purchase plants online.",
-      tags: ["Static Website", "E-commerce", "Educational Content", "Workshop Registration"]
+      description: "A front-end website showcasing various plant types and workshop details, designed to promote plant awareness and education.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      features: [
+        "Plant catalog",
+        "Workshop information",
+        "Dynamic content display",
+        "Responsive design"
+      ]
     }
   ];
 
   return (
-    <div name="projects" className="w-full min-h-screen bg-primary text-textPrimary py-20 px-4 md:px-8">
-      <div className="max-w-screen-lg mx-auto">
+    <div name="projects" className="w-full bg-primary text-textPrimary py-20">
+      <div className="max-w-screen-xl mx-auto px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="pb-8"
+          className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-[#61dafb] inline border-b-4 border-[#61dafb]">Projects</h2>
-          <p className="py-6 text-lg">Check out some of my academic work</p>
+          <h2 className="text-4xl font-bold text-[#61dafb] inline-block border-b-4 border-[#61dafb] pb-2">Projects</h2>
+          <p className="text-xl mt-6 text-gray-300">Showcasing my technical expertise through innovative solutions</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-[#0a192f] p-6 rounded-lg shadow-lg border border-[#61dafb] hover:shadow-xl transition-all duration-300"
+              className="bg-[#0a192f] rounded-xl shadow-2xl border border-[#61dafb] hover:shadow-[#61dafb]/10 hover:scale-[1.02] transition-all duration-300"
             >
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold text-[#61dafb]">{project.title}</h3>
-                <span className="text-sm text-gray-400">{project.period}</span>
-              </div>
-              <p className="text-gray-300 mb-4">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag, tagIndex) => (
-                  <span
-                    key={tagIndex}
-                    className="text-xs bg-[#112240] text-[#61dafb] px-3 py-1 rounded-full"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              <div className="p-8">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+                  <h3 className="text-2xl font-bold text-[#61dafb] leading-tight">{project.title}</h3>
+                  <span className="text-sm font-medium bg-[#112240] text-[#61dafb] px-4 py-2 rounded-full">{project.period}</span>
+                </div>
+                
+                <p className="text-gray-300 text-lg mb-8 leading-relaxed">{project.description}</p>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-[#61dafb] font-semibold mb-3 flex items-center">
+                      <span className="text-lg">Technologies</span>
+                      <div className="flex-grow h-px bg-[#61dafb]/20 ml-4"></div>
+                    </h4>
+                    <div className="flex flex-wrap gap-3">
+                      {project.technologies.map((tech, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className="text-sm bg-[#112240] text-[#61dafb] px-4 py-2 rounded-lg font-medium hover:bg-[#61dafb]/10 transition-colors"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-[#61dafb] font-semibold mb-3 flex items-center">
+                      <span className="text-lg">Key Features</span>
+                      <div className="flex-grow h-px bg-[#61dafb]/20 ml-4"></div>
+                    </h4>
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-300">
+                      {project.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-start">
+                          <span className="text-[#61dafb] mr-2">•</span>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
             </motion.div>
           ))}

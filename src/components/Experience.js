@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import virtualCertificate from '../assets/virtual_vigilantes_certificate.png';
+import salesqueenCertificate from '../assets/salesqueen_certificate.png';
 
 const Experience = () => {
   const experiences = [
@@ -7,22 +9,22 @@ const Experience = () => {
       id: 1,
       role: "Web Development Intern",
       company: "Virtual Vigilantes",
-      duration: "2023",
+      duration: "11/2023-12/2023",
       description: "Designed and developed two major web projects focusing on modern web technologies and responsive design.",
       projects: [
         "Image Gallery Website - Interactive gallery with modern design principles",
         "Personal Blog Post - Fully responsive blog platform"
       ],
-      certificateLink: "#" // Replace with actual certificate link
+      certificateLink: virtualCertificate
     },
     {
       id: 2,
-      role: "Web Development Intern",
+      role: "Frontend Intern",
       company: "Salesqueen Software Solutions",
-      duration: "2023",
+      duration: "06/2024-09/2024",
       description: "Gained hands-on experience working on various live real-world projects using modern web technologies.",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      certificateLink: "#" // Replace with actual certificate link
+      certificateLink: salesqueenCertificate
     }
   ];
 

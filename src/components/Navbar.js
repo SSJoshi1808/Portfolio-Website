@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -16,31 +16,41 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-textSecondary fixed bg-primary z-50">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-textSecondary fixed bg-[#0a192f] z-50">
       <div>
-        <h1 className="text-5xl font-signature ml-2 text-secondary">Shreya</h1>
+        <h1 className="text-4xl font-bold text-[#61dafb]">Shreya</h1>
       </div>
 
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
-          <li key={id} className="nav-link px-4 cursor-pointer capitalize font-medium">
+          <li key={id} className="nav-link px-4 cursor-pointer capitalize font-medium text-gray-300 hover:text-[#61dafb] duration-200">
             <Link to={link} smooth duration={500}>{link}</Link>
           </li>
         ))}
       </ul>
 
-      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden">
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 text-[#61dafb] md:hidden">
+        <FaBars size={30} />
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary">
-          {links.map(({ id, link }) => (
-            <li key={id} className="px-4 cursor-pointer capitalize py-6 text-4xl nav-link">
-              <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>{link}</Link>
-            </li>
-          ))}
-        </ul>
+        <div className="fixed top-0 right-0 w-[50%] h-screen bg-[#0a192f] flex flex-col justify-start pt-20 shadow-lg shadow-[#61dafb]/10">
+          <ul className="flex flex-col items-center space-y-8">
+            {links.map(({ id, link }) => (
+              <li key={id} className="text-2xl text-gray-300">
+                <Link 
+                  onClick={() => setNav(!nav)} 
+                  to={link} 
+                  smooth 
+                  duration={500}
+                  className="hover:text-[#61dafb] transition-colors duration-300"
+                >
+                  {link}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </div>
   );
