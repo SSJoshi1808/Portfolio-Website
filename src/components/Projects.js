@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Projects = () => {
   const projects = [
     {
-      title: "Suvarna Rup – Jewellery Ecommerce System",
+      title: "SuvarnaRup – Jewellery Ecommerce System",
       description: "An elegant, secure jewellery e-commerce platform with comprehensive features for both administrators and clients. The system facilitates product management, user authentication, and secure payment processing.",
       technologies: ["React-JS", "Node-JS", "Express-JS", "MongoDB", "JWT", "PayPal"],
       features: [

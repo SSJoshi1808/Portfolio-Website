@@ -9,7 +9,7 @@ const Skills = () => {
     },
     {
       title: "Web Frameworks & Libraries",
-      skills: ["React-JS", "Angular-JS", "NodeJS", "Express-JS", "Django"]
+      skills: ["React-JS", "Angular-JS", "NodeJS", "Express-JS","Django"]
     },
     {
       title: "Web Technologies",
@@ -22,6 +22,10 @@ const Skills = () => {
     {
       title: "Tools & Concepts",
       skills: ["Cybersecurity","Big Data", "Software Engineering", "OOSE"]
+    },
+    {
+      title: "Java Technologies",
+      skills: ["Servlet", "JSP", "JDBC", "Swing"]
     }
   ];
 

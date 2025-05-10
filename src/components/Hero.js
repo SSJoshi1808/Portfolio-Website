@@ -21,7 +21,7 @@ const Hero = () => {
             Full Stack Developer | MCA Student
           </h3>
           <p className="text-textPrimary py-8 text-base md:text-lg leading-relaxed">
-            I'm a Full Stack Developer specializing in building exceptional digital experiences. Currently pursuing MCA with a focus on advanced software architecture and cloud computing, I'm passionate about creating scalable solutions that deliver real value.
+            I'm a Full Stack Developer specializing in building exceptional digital experiences. Currently pursuing MCA with a CGPA of 9.35 , focus on advanced software architecture and development, I'm passionate about creating scalable solutions that deliver real value.
           </p>
           <div className="flex flex-wrap gap-4 mt-2">
             <Link
