@@ -9,7 +9,7 @@ const Education = () => {
       institution: "MES Institute of Management and Career Courses",
       year: "2024 - 2026",
       status: "Pursuing",
-      achievements: "SGPA-9.77 | CGPA-9.10 | Percentage- 86%"
+      achievements: "SGPA-9.27 | CGPA-9.27 | Percentage- 89.38%"
     },
     {
       id: 2,

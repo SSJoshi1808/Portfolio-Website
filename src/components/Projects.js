@@ -4,64 +4,59 @@ import { motion } from 'framer-motion';
 const Projects = () => {
   const projects = [
     {
-      title: "Suvarna Rup – Gold Investment Management System",
-      period: "FYMCA Sem-2",
+      title: "Suvarna Rup – Jewellery Ecommerce System",
       description: "An elegant, secure jewellery e-commerce platform with comprehensive features for both administrators and clients. The system facilitates product management, user authentication, and secure payment processing.",
-      technologies: ["React.js", "Node.js", "Express", "MongoDB", "JWT", "Stripe"],
+      technologies: ["React.js", "Node.js", "Express", "MongoDB", "JWT", "PayPal"],
       features: [
-        "Admin and Client role management",
-        "Secure payment integration",
-        "Product catalog management",
-        "User authentication and authorization",
-        "Order tracking system"
+        "Role-based access for admins and users",
+        "Integrated secure online transactions",
+        "Robust inventory and product control",
+        "Authentication and token-based authorization",
+        "Live order status and history tracking"
       ]
     },
     {
       title: "PG Rental System",
-      period: "FYMCA Sem-2",
       description: "A web platform for property owners to list PG rooms and for tenants to express interest. The system streamlines the rental process with user-friendly interfaces for both parties.",
       technologies: ["HTML", "CSS", "Python", "Django", "SQLite"],
       features: [
-        "Property listing and management",
-        "Tenant interest tracking",
-        "User authentication",
-        "Responsive design"
+        "Owner-managed room listings",
+        "Tracking of tenant applications",
+        "Secure user login and registration",
+        "Optimized layout for all devices"
       ]
     },
     {
       title: "Electronic Device Billing System",
-      period: "TYBBA_CA Sem 6",
       description: "A comprehensive billing system with functionalities to add, update, and delete product and customer details.",
       technologies: ["Java", "Swing", "MySQL", "NetBeans IDE"],
       features: [
-        "Product management",
-        "Customer management",
-        "Billing generation",
-        "Database integration"
+        "Add, edit, and remove device entries",
+        "Customer profile and data management",
+        "Automated bill creation and calculation",
+        "Seamless integration with backend database"
       ]
     },
     {
       title: "Infinity Finance - Bank Loan Management System",
-      period: "TYBBA_CA Sem 5",
       description: "An interactive system providing details on various loan types, including an EMI calculator for better financial planning.",
       technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Chart.js"],
       features: [
-        "Loan type information",
-        "EMI calculator",
-        "Interactive charts",
-        "User-friendly interface"
+        "Comprehensive loan information display",
+        "Built-in EMI estimation tool",
+        "Dynamic charts and data visualization",
+        "Simplified user navigation experience"
       ]
     },
     {
       title: "Green Culture Plant Nursery Website",
-      period: "TYBBA_CA Sem 4",
       description: "A front-end website showcasing various plant types and workshop details, designed to promote plant awareness and education.",
       technologies: ["HTML", "CSS", "JavaScript"],
       features: [
-        "Plant catalog",
-        "Workshop information",
-        "Dynamic content display",
-        "Responsive design"
+        "Visual plant listings with descriptions",
+        "Event and workshop announcements",
+        "Interactive and animated content sections",
+        "Mobile-first responsive design"
       ]
     }
   ];
@@ -91,7 +86,6 @@ const Projects = () => {
               <div className="p-8">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
                   <h3 className="text-2xl font-bold text-[#61dafb] leading-tight">{project.title}</h3>
-                  <span className="text-sm font-medium bg-[#112240] text-[#61dafb] px-4 py-2 rounded-full">{project.period}</span>
                 </div>
                 
                 <p className="text-gray-300 text-lg mb-8 leading-relaxed">{project.description}</p>
