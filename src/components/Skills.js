@@ -21,7 +21,7 @@ const Skills = () => {
     },
     {
       title: "Tools & Concepts",
-      skills: ["Cybersecurity","Big Data", "Software Engineering", "OOSE"]
+      skills: ["Cybersecurity","GitHub","Vercel","Big Data", "Software Engineering", "OOSE"]
     },
     {
       title: "Java Technologies",
