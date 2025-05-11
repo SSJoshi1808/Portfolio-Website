@@ -18,7 +18,7 @@ const Hero = () => {
             Shreya Sanjay Joshi
           </h2>
           <h3 className="text-2xl md:text-3xl text-gray-400 mt-4 font-medium tracking-wide">
-            Full Stack Developer | MCA Student
+            Web Developer | MCA Student
           </h3>
           <p className="text-textPrimary py-8 text-base md:text-lg leading-relaxed">
             I'm a Full Stack Developer specializing in building exceptional digital experiences. Currently pursuing MCA with a CGPA of 9.35 , focus on advanced software architecture and development, I'm passionate about creating scalable solutions that deliver real value.
@@ -31,6 +31,15 @@ const Hero = () => {
               className="group bg-[#61dafb] text-primary px-6 py-3 rounded-md hover:bg-opacity-90 transition-all duration-300 flex items-center font-semibold text-sm md:text-base cursor-pointer"
             >
               View Projects
+              <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+            </Link>
+            <Link
+              to="certifications"
+              smooth={true}
+              duration={500}
+              className="group border border-[#61dafb] text-[#61dafb] px-6 py-3 rounded-md hover:bg-[#61dafb] hover:text-primary transition-all duration-300 flex items-center font-semibold text-sm md:text-base cursor-pointer"
+            >
+              View Certifications
               <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
             </Link>
           </div>
