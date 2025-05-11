@@ -30,12 +30,12 @@ const Certifications = () => {
       certificate: ciscoCert
     },
     {
-      title: "Frontend Internship Certificate",
+      title: "WebDevelopment Internship Certificate",
       issuer: "Virtual Vigilantes",
       certificate: virtualVigilantesCert
     },
     {
-      title: "SalesQueen Internship Certificate",
+      title: "Frontend Internship Certificate",
       issuer: "SalesQueen",
       certificate: salesqueenCert
     }
