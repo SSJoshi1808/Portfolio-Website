@@ -34,7 +34,7 @@ const Hero = () => {
               View Projects
               <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
             </Link>
-            <a
+            {/* <a
               href={CV}
               download="Shreya_Sanjay_Joshi_CV"
               className="group bg-transparent border border-[#61dafb] text-[#61dafb] px-6 py-3 rounded-md hover:bg-[#61dafb] hover:text-primary transition-all duration-300 flex items-center font-semibold text-sm md:text-base"
@@ -52,7 +52,7 @@ const Hero = () => {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </a> */}
             <Link
               to="certifications"
               smooth={true}
