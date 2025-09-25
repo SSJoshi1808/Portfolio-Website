@@ -14,7 +14,7 @@ const Projects = () => {
         "Authentication and token-based authorization",
       ],
       // github: "https://github.com/SSJoshi1808/Ecommerce-System-SuvarnaRup-.git"
-      Live:"https://suvarna-rup-deployed-5m9z.vercel.app"
+      live:"https://suvarna-rup-deployed-5m9z.vercel.app"
     },
     {
       title: "PG Rental System",
