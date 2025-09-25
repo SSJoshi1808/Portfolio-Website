@@ -34,25 +34,7 @@ const Hero = () => {
               View Projects
               <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
             </Link>
-            {/* <a
-              href={CV}
-              download="Shreya_Sanjay_Joshi_CV"
-              className="group bg-transparent border border-[#61dafb] text-[#61dafb] px-6 py-3 rounded-md hover:bg-[#61dafb] hover:text-primary transition-all duration-300 flex items-center font-semibold text-sm md:text-base"
-            >
-              Download CV
-              <svg
-                className="ml-2 w-5 h-5 group-hover:translate-y-[2px] transition-transform"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </a> */}
+           
             <Link
               to="certifications"
               smooth={true}
