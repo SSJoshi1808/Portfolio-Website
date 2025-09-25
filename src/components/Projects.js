@@ -13,8 +13,7 @@ const Projects = () => {
         "Robust inventory and product control",
         "Authentication and token-based authorization",
       ],
-      // github: "https://github.com/SSJoshi1808/Ecommerce-System-SuvarnaRup-.git"
-      live:"https://suvarna-rup-deployed-5m9z.vercel.app"
+      live:   "https://suvarna-rup-deployed-5m9z.vercel.app"
     },
     {
       title: "PG Rental System",
